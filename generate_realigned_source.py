@@ -20,7 +20,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from collections import defaultdict
 
-BASE = Path(r"C:\Users\Jose Miguel Sorando\Documents\RP Cleaning 4 (Claude)")
+BASE = Path(r"C:\Users\Jose Miguel Sorando\Documents\RP Cleaning 5")
 SRC  = BASE / "source"
 OUT  = BASE / "output"
 
@@ -28,7 +28,7 @@ OUT  = BASE / "output"
 def main():
     # ── Load data ─────────────────────────────────────────────────
     print("Loading source CSV...")
-    source = pd.read_csv(SRC / "patient_extract0912_filtered_corrected.csv", low_memory=False)
+    source = pd.read_csv(SRC / "patient_extract1602.csv", low_memory=False)
     print(f"  {len(source)} rows, {len(source.columns)} columns")
 
     print("Loading corrected_meal_times_ALL.csv...")
